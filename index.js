@@ -18,4 +18,7 @@ return kids;
 }
 
 function increaseRankBy(n){
+  let lists = document.getElementsByClassName('ranked-list');
+  
+  return lists[1];
 }
