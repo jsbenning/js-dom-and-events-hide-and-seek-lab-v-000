@@ -19,6 +19,12 @@ return kids;
 
 function increaseRankBy(n){
   let lists = document.getElementsByClassName('ranked-list');
-  
-  return lists[1];
+  for (let x = 0; lists.length < 0; x++){
+    let y = 0;
+    let liNum = lists[x].getElementsByTagName('li')[y].innerHTML;
+    while (liNum){
+      liNum = parseInt(liNum + n);
+      ++y;
+    }
+  }
 }
