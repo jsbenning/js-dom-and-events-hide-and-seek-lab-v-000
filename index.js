@@ -19,6 +19,9 @@ return kids;
 
 function increaseRankBy(n){
   let lists = document.getElementsByClassName('ranked-list');
-  
-  return lists[1];
+  for (let x = 0; lists.length > x; ++x){
+    for (let y = 0; lists[x].getElementsByTagName('li').length > y; ++y){
+      lists[x].getElementsByTagName('li')[y].innerHTML = parseInt(lists[x].getElementsByTagName('li')[y].innerHTML) + parseInt(n);
+    }
+  }
 }
